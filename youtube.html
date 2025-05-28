@@ -16,24 +16,26 @@
 
 <body style="padding-top:70px;
 padding-left: 75px;">
-    <div class="header">
+    <header class="header">
         <div class="left-section">
             <img class="hamburger-icon" src="icons/hamburger-menu.svg">
             <img class="youtube-logo" src="icons/youtube.webp">
 
         </div>
-        
+
         <div class="middle-section">
             <input class="search-bar" type="text" placeholder="Search">
             <button class="search-button">
                 <img class="search-icon" src="icons/searchicon.jpg">
                 <div class="tooltip">Search</div>
             </button>
+            <!-- put position absolute inside 
+             position relative-->
             <button class="voice-button">
                 <img class="voice-icon" src="icons/voice-search-icon.svg">
-                <div class="tooltip">Search eith your voice</div>
+                <div class="tooltip">Search with your voice</div>
             </button>
-           
+
         </div>
         <div class="right-section">
             <div class="upload-icon-container">
@@ -44,7 +46,7 @@ padding-left: 75px;">
                 <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
                 <div class="tooltip">Youtube Apps</div>
             </div>
-            
+
             <div class="notifications-icons-container">
                 <img class="notifications-icon" src="icons/notifications.svg">
                 <div class="tooltip">Notifications </div>
@@ -53,9 +55,9 @@ padding-left: 75px;">
             <img class="current-user-picture" src="Channels/mychannel.jpg">
 
         </div>
-    
-    </div>
-    <div class="sidebar">
+
+    </header>
+    <nav class="sidebar">
         <div class="sidebar-link">
             <img src="icons/home.svg">
             <div>Home</div>
@@ -77,170 +79,173 @@ padding-left: 75px;">
             <div>Youtube Music</div>
         </div>
         <div class="sidebar-link">
-            <img src="icons/library.svg"> 
-            <div>Library</div>       
+            <img src="icons/library.svg">
+            <div>Library</div>
         </div>
-    </div>
-    
-    <div class="video-grid">
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/thumbnail2.avif">
-                <div class="video-time">
-                    14:09
+    </nav>
+    <main>
+        <section class="video-grid">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail2.avif">
+                    <div class="video-time">
+                        14:09
+                    </div>
                 </div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-picture" src="Channels/channels2.jpg">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        Pulse | Official Trailer | Netflix
-                    </p>
-                    <p class="video-author">
-                        Netflix &#10003;
-                    </p>
-                    <p class="video-stats">
-                        662K views &#183; 1 month ago
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/thumbnail1.avif">
-                <div class="video-time">
-                    12:00
-                </div>
-            </div>
-            
-            <div>
                 <div class="video-info-grid">
                     <div class="channel-picture">
-                        <img class="profile-picture" src="Channels/channel1.jpg">
+                        <img class="profile-picture" src="Channels/channels2.jpg">
                     </div>
                     <div class="video-info">
                         <p class="video-title">
-                            Padakkalam | Official Movie Trailer | Manu Swaraj | Suraj Venjaramoodu | Sharaf U Dheen |
-                            Vijay Babu
+                            Pulse | Official Trailer | Netflix
                         </p>
                         <p class="video-author">
-                            Friday Film House &#10003;
+                            Netflix &#10003;
                         </p>
                         <p class="video-stats">
-                            282K views &#183; 1hour ago
+                            662K views &#183; 1 month ago
                         </p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/thumbnail3.avif">
-                <div class="video-time">
-                    1:44:45
-                </div>
-            </div>
-            
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-picture" src="Channels/channel3.jpg">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">
-                         A Royal in Paradise | Full Romantic Comedy Movie
-                    </p>
-                    <p class="video-author">
-                        Nicely Entertainment
-                    </p>
-                    <p class="video-stats">
-                        2.7M views &#183; 1 month ago
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/thumbnail4.avif">
-                <div class="video-time">
-                    27:19
-                </div>
-            </div>
-            
-            <div>
-                <div class="video-info-grid">
-                    <div class="channel-picture">
-                        <img class="profile-picture" src="Channels/channel4.jpg">
-                    </div>
-                    <div class="video-info">
-                        <p class="video-title">
-                            Pavanai
-                        </p>
-                        <p class="video-author">
-                            The Gebonions &#10003;
-                        </p>
-                        <p class="video-stats">
-                            964K views &#183; 2years ago
-                        </p>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail1.avif">
+                    <div class="video-time">
+                        12:00
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/thumbnail5.avif">
-                <div class="video-time">
-                    35:52
-                </div>
-            </div>
-            
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-picture" src="Channels/channel5.jpg">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">
-                        A Day In My Life
-                    </p>
-                    <p class="video-author">
-                        Misry_ebrahim
-                    </p>
-                    <p class="video-stats">
-                        176K views &#183; 4days ago
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="thumbnails/thumbnail6.avif">
-                <div class="video-time">
-                    24:09
-                </div>
-            </div>
-            
 
-            <div>
+                <div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="Channels/channel1.jpg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                Padakkalam | Official Movie Trailer | Manu Swaraj | Suraj Venjaramoodu | Sharaf U Dheen
+                                |
+                                Vijay Babu
+                            </p>
+                            <p class="video-author">
+                                Friday Film House &#10003;
+                            </p>
+                            <p class="video-stats">
+                                282K views &#183; 1hour ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail3.avif">
+                    <div class="video-time">
+                        1:44:45
+                    </div>
+                </div>
+
                 <div class="video-info-grid">
                     <div class="channel-picture">
-                        <img class="profile-picture" src="Channels/channels6.jpg">
+                        <img class="profile-picture" src="Channels/channel3.jpg">
                     </div>
                     <div class="video-info">
                         <p class="video-title">
-                            How To Remember EVERYTHING Like The Japanese Student
+                            A Royal in Paradise | Full Romantic Comedy Movie
                         </p>
                         <p class="video-author">
-                            easyway,actually
+                            Nicely Entertainment
                         </p>
                         <p class="video-stats">
-                            2.7M views &#183; 2months ago
+                            2.7M views &#183; 1 month ago
                         </p>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail4.avif">
+                    <div class="video-time">
+                        27:19
+                    </div>
+                </div>
+
+                <div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="Channels/channel4.jpg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                Pavanai
+                            </p>
+                            <p class="video-author">
+                                The Gebonions &#10003;
+                            </p>
+                            <p class="video-stats">
+                                964K views &#183; 2years ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail5.avif">
+                    <div class="video-time">
+                        35:52
+                    </div>
+                </div>
+
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="Channels/channel5.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            A Day In My Life
+                        </p>
+                        <p class="video-author">
+                            Misry_ebrahim
+                        </p>
+                        <p class="video-stats">
+                            176K views &#183; 4days ago
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="thumbnails/thumbnail6.avif">
+                    <div class="video-time">
+                        24:09
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="video-info-grid">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="Channels/channels6.jpg">
+                        </div>
+                        <div class="video-info">
+                            <p class="video-title">
+                                How To Remember EVERYTHING Like The Japanese Student
+                            </p>
+                            <p class="video-author">
+                                easyway,actually
+                            </p>
+                            <p class="video-stats">
+                                2.7M views &#183; 2months ago
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
 
 
 </body>
