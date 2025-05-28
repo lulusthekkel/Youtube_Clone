@@ -4,6 +4,17 @@
     flex-direction: row;
     justify-content: space-between;
 
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background-color: white;
+
+    border-bottom:1px solid rgb(235, 230, 230);
+    z-index: 20;
+
 }
 .left-section{
     display: flex;
@@ -46,6 +57,7 @@
     font-size: 16px;
 }
 .search-button{
+
     height: 39px;
     width: 66px;
     background-color: rgb(240, 240, 240);
@@ -55,7 +67,7 @@
 }
 .search-icon{
     height: 25px;
-    margin-top: 4px;
+
 }
 .voice-button{
     height: 40px;
@@ -66,7 +78,7 @@
 }
 .voice-icon{
     height: 25px;
-    margin-top: 4px;
+    
 }
 .right-section{
     width: 180px;
@@ -88,4 +100,62 @@
 .current-user-picture{
     height: 32px;
     border-radius: 16px;
+}
+.notifications-icons-container{
+    position: relative;
+}
+.notifications-count{
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    background-color: rgb(201, 7, 7);
+    color: white;
+    font-family: roboto,arial;
+    font-size: 11px;
+    padding-left: 5px ;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius:10px ;
+
+}
+
+.search-button .tooltip,
+.voice-button .tooltip,
+.upload-icon-container .tooltip,
+.youtube-apps-container .tooltip,
+.notifications-icons-container .tooltip{
+    font-family: Roboto,Arial;
+    position:absolute;
+    bottom: -30px;
+    background-color: gray;
+    color: white;
+    padding:4px 4px 8px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transform: opacity 0.15s;
+    pointer-events: none;
+    white-space:nowrap ;
+
+}
+.search-button:hover .tooltip,
+.voice-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.youtube-apps-container:hover .tooltip,
+.notifications-icons-container:hover .tooltip{
+    opacity: 1;
+    
+}
+.search-button,
+.voice-button,
+.upload-icon-container,
+.youtube-apps-container,
+.notifications-icons-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
